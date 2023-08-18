@@ -12,8 +12,8 @@ export default function Home() {
       </ul>
     </nav>
 
-      <Title text="Em Alta"/>
-      <Title text="Lançamentos"/>
+      <Title>Em Alta</Title>
+      <Title>Lançamentos</Title>
 
     </>
   )
