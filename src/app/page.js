@@ -1,5 +1,8 @@
+import Title from "@/components/Title";
+
 export default function Home() {
-  return ( //JSX
+  return ( 
+    <>
     <nav className="bg-slate-500 p-2 flex gap-3 items-end">
       <h1 className="text-4xl text-zinc-100 font-bold uppercase">FIAP Filmes</h1>
       <ul>
@@ -8,5 +11,10 @@ export default function Home() {
         </li>
       </ul>
     </nav>
+
+      <Title text="Em Alta"/>
+      <Title text="Lançamentos"/>
+
+    </>
   )
 }
