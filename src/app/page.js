@@ -5,17 +5,20 @@ export default function Home() {
   //mock
   const filmes = [
     {
+      id: 1,
       titulo: "Star Wars",
       nota: 9.5,
       poster: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dw7X9YPjjAfIxKHW04V64Bb9TB0.jpg"
     },
     {
+      id: 2,
       titulo: "The Mandalorian",
       nota: 9.0,
       poster: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg"
 
     },
     {
+      id: 3,
       titulo: "Interstellar",
       nota: 10,
       poster: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg"
