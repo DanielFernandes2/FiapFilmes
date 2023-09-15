@@ -1,40 +1,22 @@
 import CardFilme from "@/components/CardFilme";
 import Title from "@/components/Title";
 
-export default function Home() {
-  //mock
-  const filmes = [
-    {
-      id: 1,
-      titulo: "Star Wars",
-      nota: 9.5,
-      poster: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dw7X9YPjjAfIxKHW04V64Bb9TB0.jpg"
-    },
-    {
-      id: 2,
-      titulo: "The Mandalorian",
-      nota: 9.0,
-      poster: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg"
+async function carregarDados(){
+  const url = "https://api.themoviedb.org/3/trending/movie/week?api_key=1e922667481ab207d642450b0efb461e&language=pt-br"
+  const response = await fetch(url)
+  const json = await response.json()
+  return json.results
+}
 
-    },
-    {
-      id: 3,
-      titulo: "Interstellar",
-      nota: 10,
-      poster: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg"
-    }
+export default async function Home() {
 
-  ] 
+  const filmes = await carregarDados()
 
   return ( 
     <>
     <nav className="bg-slate-500 p-2 flex gap-3 items-end">
       <h1 className="text-4xl text-zinc-100 font-bold uppercase">FIAP Filmes</h1>
-      <ul>
-        <li>
-          <a href="#">favoritos</a>
-        </li>
-      </ul>
+      <a href="/favoritos">favoritos</a>
     </nav>
 
       <Title>Em Alta</Title>
