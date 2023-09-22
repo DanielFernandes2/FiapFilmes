@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+          "full_name": "Rick Sanchez",
+          "age": "70",
+          "about": "Rick is a genius scientist who is often troubled by his own inventions and has a nihilistic view on life."
+        },
+        {
+          "full_name": "Morty Smith",
+          "age": "14",
+          "about": "Morty is Rick's good-hearted but easily distressed grandson who is frequently dragged into Rick's misadventures."
+        },
+        {
+          "full_name": "Jerry Smith",
+          "age": "34",
+          "about": "Jerry is Morty's insecure father who dislikes Rick's influence over his family."
+        },
+        {
+          "full_name": "Summer Smith",
+          "age": "17",
+          "about": "Summer is Morty's somewhat rebellious teenage sister who occasionally joins Rick on his adventures."
+        },
+        {
+          "full_name": "Beth Smith",
+          "age": "34",
+          "about": "Beth is Morty's assertive mother and Rick's daughter. She is a horse surgeon."
+        }
+      ]
+}
