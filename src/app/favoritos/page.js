@@ -1,5 +1,6 @@
 import CardFilme from "@/components/CardFilme";
 import Title from "@/components/Title";
+import NavBar from "@/components/navbar";
 
 async function carregarDados(){
     const options = {
@@ -22,10 +23,7 @@ export default async function Favoritos() {
 
   return ( 
     <>
-    <nav className="bg-slate-500 p-2 flex gap-3 items-end">
-      <h1 className="text-4xl text-zinc-100 font-bold uppercase">FIAP Filmes</h1>
-      <a href="/favoritos">favoritos</a>
-    </nav>
+      <NavBar />
 
       <Title>Favoritos</Title>
 

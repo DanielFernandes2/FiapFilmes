@@ -1,5 +1,6 @@
 import CardFilme from "@/components/CardFilme";
 import Title from "@/components/Title";
+import NavBar from "@/components/navbar";
 
 async function carregarDados(){
   const url = "https://api.themoviedb.org/3/trending/movie/week?api_key=1e922667481ab207d642450b0efb461e&language=pt-br"
@@ -14,10 +15,7 @@ export default async function Home() {
 
   return ( 
     <>
-    <nav className="bg-slate-500 p-2 flex gap-3 items-end">
-      <h1 className="text-4xl text-zinc-100 font-bold uppercase">FIAP Filmes</h1>
-      <a href="/favoritos">favoritos</a>
-    </nav>
+      <NavBar />
 
       <Title>Em Alta</Title>
 
